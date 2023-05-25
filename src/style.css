@@ -1,0 +1,99 @@
+body {
+	background: #2c2c2c;
+	font-family: "IBM Plex Sans";
+	color: #ffffff;
+	max-width: 100%;
+}
+
+#header {
+	position: fixed;
+	left: -1px;
+	top: -1px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 1% 1%;
+	width: 98%;
+	height: 80px;
+	background: #3787ff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	color: white;
+}
+
+#logo {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+}
+
+ul {
+	padding-inline-start: 0px;
+	list-style-type: none;
+}
+
+#menuList {
+	width: 70%;
+}
+
+.menuItem {
+	display: inline;
+	float: left;
+	padding: 1%;
+	font-style: light;
+	font-weight: 200;
+	font-size: 24px;
+}
+
+#content {
+	position: absolute;
+	top: 100px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 1%;
+	min-width: 96%;
+	min-height: 80%;
+}
+
+.tile {
+	margin: 1%;
+	background: #494949;
+	border-radius: 20px;
+	min-width: 20%;
+	min-height: 20%;
+}
+
+.tileTitle {
+	position: relative;
+	flex-grow: 2;
+	padding: 1%;
+	text-align: center;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 32px;
+}
+
+.tileItem {
+	text-align: left;
+	left: 1%;
+	padding: 5%;
+	padding-top: 2%;
+	padding-bottom: 0%;
+}
+
+.tileStat {
+	text-align: right;
+	right: 1%;
+	padding: 5%;
+	padding-top: 0%;
+	padding-bottom: 2%;
+}
+
+.tileList {
+	text-align: left;
+	margin: 5%;
+	padding: 10%;
+	width: 90%;
+}
