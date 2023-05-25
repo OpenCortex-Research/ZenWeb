@@ -61,8 +61,8 @@ ul {
 	margin: 1%;
 	background: #494949;
 	border-radius: 20px;
-	min-width: 20%;
-	min-height: 20%;
+	min-width: 30%;
+	min-height: 40%;
 }
 
 .tileTitle {
@@ -96,4 +96,14 @@ ul {
 	margin: 5%;
 	padding: 10%;
 	width: 90%;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: inherit;
 }

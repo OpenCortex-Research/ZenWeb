@@ -9,13 +9,26 @@ import subprocess
 
 class MyHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        if self.path == '/':
+        if self.path.split('/')[1] == 'dev':
+            self.send_response(200)
+            self.send_header('Content-type', 'text/html')
+            self.end_headers()
+            with open('dev/index.html', 'r') as f:
+                self.wfile.write(f.read())
+            return
+        elif self.path == '/':
             self.send_response(200)
             self.send_header('Content-type', 'text/html')
             self.end_headers()
             with open('src/index.html', 'r') as f:
                 self.wfile.write(f.read())
             return
+        elif self.path == '/packages':
+            self.send_response(404)
+            self.send_header('Content-type', 'text/html')
+            self.end_headers()
+            self.wfile.write("Coming Soon")
+        
         # Host the /media/p4/Presets/setlists directory
         elif self.path == '/media/p4/Presets/setlists':
             self.send_response(200)
