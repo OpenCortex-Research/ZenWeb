@@ -9,14 +9,7 @@ import subprocess
 
 class MyHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        if self.path.split('/')[1] == 'dev':
-            self.send_response(200)
-            self.send_header('Content-type', 'text/html')
-            self.end_headers()
-            with open('dev/index.html', 'r') as f:
-                self.wfile.write(f.read())
-            return
-        elif self.path == '/':
+        if self.path == '/':
             self.send_response(200)
             self.send_header('Content-type', 'text/html')
             self.end_headers()

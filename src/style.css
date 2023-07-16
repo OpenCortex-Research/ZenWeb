@@ -59,6 +59,8 @@ ul {
 
 .tile {
 	margin: 1%;
+
+	padding: 1%;
 	background: #494949;
 	border-radius: 20px;
 	min-width: 30%;
@@ -85,7 +87,7 @@ ul {
 
 .tileStat {
 	text-align: right;
-	right: 1%;
+	right: 5%;
 	padding: 5%;
 	padding-top: 0%;
 	padding-bottom: 2%;
@@ -94,8 +96,13 @@ ul {
 .tileList {
 	text-align: left;
 	margin: 5%;
-	padding: 10%;
+	padding: 0%;
 	width: 90%;
+}
+
+.gridBlock,
+gridRowBlocks {
+	display: inline;
 }
 
 a,

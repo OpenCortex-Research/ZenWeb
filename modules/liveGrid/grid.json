@@ -1,0 +1,9 @@
+{
+	"moduleName": "liveGrid",
+	"widgetHTML": "grid.html",
+	"widgetJS": "grid.js",
+	"widgetCSS": "grid.css",
+	"pageHTML": "gridPage.html",
+	"pageJS": "gridPage.js",
+	"type": ["homeWidget", "page"]
+}
